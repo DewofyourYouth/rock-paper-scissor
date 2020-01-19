@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap');
+body {
+  color: #fff;
+  background: radial-gradient(
+    circle at top center,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#app {
+  width: 70%;
+  margin: auto;
+}
+
+#score-board {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  border: solid 1px hsl(217, 16%, 45%);
+  min-height: 90px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.name h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: -7px;
+  padding: 0;
+}
+
+#score-area {
+  color: hsl(229, 25%, 31%);
+  background-color: #fff;
+  height: 10vh;
+  width: 100px;
+  border-radius: 20%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#score-area small {
+  font-size: 0.8rem;
+}
+
+#urscore {
+  font-size: 3rem;
+}
+
+#game-area {
+  display: grid;
+  grid-template-areas:
+    'paper . scissors'
+    '. rock .';
+  grid-template-rows: 1fr 1fr;
+  margin: 30px auto;
+  /* background-image: url('../images/bg-triangle.svg'); */
+  background-repeat: no-repeat;
+  background-position: 50% auto;
+  min-height: 65vh;
+  width: 50vw;
+}
+
+.rpc-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.rpc-btn:focus {
+  outline: none;
+}
+
+#rock {
+  grid-area: rock;
+  border: solid 15px hsl(349, 70%, 56%);
+}
+
+#paper {
+  grid-area: paper;
+  border: solid 15px hsl(230, 89%, 65%);
+}
+
+#scissors {
+  grid-area: scissors;
+  align-content: flex-end;
+  border: solid 15px hsl(40, 84%, 53%);
+}
