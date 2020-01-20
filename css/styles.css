@@ -34,6 +34,10 @@ body {
 }
 
 #score-area {
+  display: flex;
+}
+
+#score-area > div {
   color: hsl(229, 25%, 31%);
   background-color: #fff;
   height: 10vh;
@@ -43,11 +47,12 @@ body {
   text-transform: uppercase;
 }
 
-#score-area small {
+#score-area > small {
   font-size: 0.8rem;
 }
 
-#urscore {
+#urscore,
+#compscore {
   font-size: 3rem;
 }
 
